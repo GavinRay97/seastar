@@ -758,9 +758,7 @@ target_link_libraries (seastar
     rt::rt
     yaml-cpp::yaml-cpp
     Valgrind::valgrind
-    Threads::Threads
-  INTERFACE
-    Valgrind::valgrind)
+    Threads::Threads)
 
 set (Seastar_SANITIZE_MODES "Debug" "Sanitize")
 if ((Seastar_SANITIZE STREQUAL "ON") OR
